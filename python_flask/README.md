@@ -9,16 +9,21 @@ in your system, please consult official documentation here:
 [2]: https://docs.docker.com/compose/install/
 
 1. List all images or conatiners (check if you have `centos` image name):
-`docker images`
+~~~ sh
+$ docker images
 
-2. (optional) If you have, remove using this command (image id: `00f17bedf504`):
-`docker rmi -f 00f17bedf504`
+2. (optional) If you have, remove using (image id: `00f17bedf504`):
+~~~ sh
+$ docker rmi -f 00f17bedf504
 
 3. Get a docker images from centos project:
-`docker pull centos`
+~~~ sh
+$ docker pull centos
 
 4. (optional) Running a interactive docker with centos latest version, simple test:
-`docker run -it centos`
+~~~ sh
+$ docker run -it centos
 
 5. Clone this repo and after running docker-compose in $your-path/python_flask/:
-`docker-compose up`
+~~~ sh
+$ docker-compose up
